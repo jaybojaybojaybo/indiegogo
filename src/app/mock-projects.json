@@ -1,0 +1,29 @@
+{ "projects": [{
+    "name": "Get Courier Coffee a new Sound System!",
+    "starters": "Hannah",
+    "description": "a new bike",
+    "goal": 500,
+    "plan": "build bike",
+    "userRewards": "get bike",
+    "category": "art",
+    "imageUrl": "../assets/coffee.png"
+    }, {
+    "name": "shoe",
+    "starters": "Jasun",
+    "description": "a new shoe",
+    "goal": 450,
+    "plan": "build shoe",
+    "userRewards": "get shoe",
+    "category": "art",
+    "imageUrl": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d34d6f838187851833f639868ec9e18c&auto=format&fit=crop&w=975&q=80"
+    }, {
+    "name": "wall",
+    "starters": "Lina",
+    "description": "a new wall",
+    "goal": 1000,
+    "plan": "build wall",
+    "userRewards": "get wall",
+    "category": "art",
+    "imageUrl": "https://images.unsplash.com/photo-1446716336919-df838e44ce7b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19e6ad3e1d02b19c7ba00a7430b8c67d&auto=format&fit=crop&w=890&q=80"
+  }]
+}
