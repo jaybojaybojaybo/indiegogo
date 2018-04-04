@@ -1,0 +1,15 @@
+.navigation {
+  background-color: #EB1478;
+  color: white;
+  height: 70px;
+  width: 100%;
+}
+
+#title {
+  font-family: "Helvetica";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+/*font-family: "Benton Sans","Helvetica","sans-serif";*/
