@@ -10,8 +10,8 @@
 
       </div>
       <div class="navbar">
-        <a routerLink="entrepreneurs">For Entrepreneurs</a>
-        <a routerLink="campaign">Start a Campaign</a>
+        <a routerLink="entrepreneurs"> For Entrepreneurs</a>
+        <a routerLink="campaign"> Start a Campaign</a>
         <a *ngIf="isLoggedIn">
           <a>{{userName}}</a>
           <a (click)="logout()">Log out</a>
@@ -25,4 +25,5 @@
 </div>
 <body>
   <app-hero></app-hero>
+  <app-projects></app-projects>
 </body>
