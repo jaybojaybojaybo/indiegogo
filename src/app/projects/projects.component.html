@@ -2,13 +2,13 @@
   <h2> Projects</h2>
   <hr>
   <div class="row">
-    <div *ngFor="let project of projects | async" class="col-md-4">
+    <div *ngFor="let project of projects | async" (click)="goToDetailPage(project)" class="col-md-4">
       <div class="card mb-4 box-shadow imgBox">
         <img class="card-img-top projectImg" src="{{project.imageUrl}}" alt="Card image cap">
         <div class="card-body">
-          <p class="card-title">{{project.name}}</p>
-          <p class="card-text">by {{project.starters}}</p>
           <div class="d-flex justify-content-between align-items-center">
+            <p class="card-title">{{project.name}}</p>
+            <p class="card-text">by {{project.starters}}</p>
           </div>
         </div>
       </div>

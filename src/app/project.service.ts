@@ -20,15 +20,21 @@ export class ProjectService {
   //addProject() method refers to the this.projects defined in the service's constructor. this.projects refers to the specific area of our database where our list of Projects is stored.
 
   getProjectById(projectId: string){
-   return this.database.object('/projects/' + projectId);
+   return this.database.object('project-details/' + projectId);
   }
 
   updateProject(localUpdatedProject){
    var projectEntryInFirebase = this.getProjectById(localUpdatedProject.$key);
    projectEntryInFirebase.update({
-     title: localUpdatedProject.title,
-     artist: localUpdatedProject.artist,
-     description: localUpdatedProject.description});
+     name: localUpdatedProject.title,
+     starters: localUpdatedProject.artist,
+     description: localUpdatedProject.description,
+     goal: localUpdatedProject.goal,
+     plan: localUpdatedProject.plan,
+     userRewards: localUpdatedProject.userRewards,
+     category: localUpdatedProject.category,
+     imageUrl: localUpdatedProject.imageUrl
+   });
   }
   //service needs a method to locate a specific Project's Firebase entry and update it.
 
