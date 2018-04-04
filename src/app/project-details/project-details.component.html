@@ -1,3 +1,11 @@
-<p>
-  project-details works!
-</p>
+<div>
+  <!-- <img src="{{(projectToDisplay | async)?.imageUrl}}"> -->
+  <h3>{{(projectToDisplay | async)?.name}}</h3>
+  <h4>{{(projectToDisplay | async)?.starters}}</h4>
+  <p>{{(projectToDisplay | async)?.description}}</p>
+  <!-- <p>{{(projectToDisplay | async)?.goal | currency:'USD':true:'1.2-2'}}</p> -->
+  <!-- <p>{{(projectToDisplay | async)?.plan}}</p>
+  <p>{{(projectToDisplay | async)?.userRewards}}</p>
+  <p>{{(projectToDisplay | async)?.category}}</p> -->
+  <p>text</p>
+</div>

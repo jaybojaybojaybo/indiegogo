@@ -23,10 +23,10 @@ export class ProjectDetailsComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log("inInit");
-    // this.route.params.forEach((urlParameters) => {
-    //   this.projectId = urlParameters['id'];
-    // });
-    // this.projectToDisplay = this.projectService.getProjectById(this.projectId);
+    this.route.params.forEach((urlParameters) => {
+      this.projectId = urlParameters['id'];
+    });
+    this.projectToDisplay = this.projectService.getProjectById(this.projectId);
+    console.log(this.projectToDisplay);
   }
 }
