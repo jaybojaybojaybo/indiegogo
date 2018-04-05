@@ -33,7 +33,6 @@ export class CreateProjectComponent {
     console.log(newProject.plan);
     console.log(newProject.starters);
     console.log(newProject.userRewards);
-
     this.projectService.addProject(newProject);
   }
 }

@@ -18,6 +18,10 @@
  <input #newGoal>
 </div>
 <div>
+  <label>Enter the Plan:</label>
+  <input #newPlan>
+</div>
+<div>
   <label>Enter Image Url</label>
   <input #newImageUrl>
 </div>
@@ -27,19 +31,20 @@
 </div>
 <div>
  <label>Enter Project Category:</label>
- <input #newCategory placeholder="like 'art', 'music', etc...">
+ <input #newCategory>
 </div>
 <div>
   <label>Task Priority:</label>
   <button (click)="addProject(
-    newName.value,
-    newStarters.value,
+    newCategory.value,
     newDescription.value,
     newGoal.value,
     newImageUrl.value,
-    newUserRewards.value,
-    newCategory.value
-    );"> Add
+    newName.value,
+    newPlan.value,
+    newStarters.value,
+    newUserRewards.value
+    ); console.log(newUserRewards)"> Add
   </button>
   <!-- includes both a method call and property assignment set back to a string. -->
 </div>
