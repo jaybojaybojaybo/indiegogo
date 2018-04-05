@@ -21,7 +21,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   goToDetailPage(clickedProject) {
-    console.log("hi!")
     this.router.navigate(['project-details', clickedProject.$key]);
   };
 

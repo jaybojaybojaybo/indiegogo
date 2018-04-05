@@ -11,5 +11,14 @@
   font-weight: bolder;
 }
 
+.navbar-brand {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*font-family: "Benton Sans","Helvetica","sans-serif";*/

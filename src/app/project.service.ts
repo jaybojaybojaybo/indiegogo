@@ -20,7 +20,7 @@ export class ProjectService {
   //addProject() method refers to the this.projects defined in the service's constructor. this.projects refers to the specific area of our database where our list of Projects is stored.
 
   getProjectById(projectId: string){
-   return this.database.object('project-details/' + projectId);
+   return this.database.object('projects/' + projectId);
   }
 
   updateProject(localUpdatedProject){
