@@ -3,7 +3,8 @@ export class Project {
     public name: string,
     public starters: string,
     public description: string,
-    public goal: number,
+    public goal: string,
+    public imageUrl: string,
     public plan: string,
     public userRewards: string,
     public category: string

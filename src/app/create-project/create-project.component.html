@@ -1,0 +1,45 @@
+<h1>New Project</h1>
+<div>
+  <label>Enter Project Name:</label>
+  <input #newName>
+</div>
+<div>
+  <label>Who is starting this project?</label>
+  <input #newStarters placeholder="Enter your name(s)">
+</div>
+<div>
+  <label>Enter Project Description:</label>
+  <textarea #newDescription id = "myTextArea" rows = "3" cols = "80">
+    Your text here
+  </textarea>
+</div>
+<div>
+ <label>Enter Project Goal:</label>
+ <input #newGoal>
+</div>
+<div>
+  <label>Enter Image Url</label>
+  <input #newImageUrl>
+</div>
+<div>
+ <label>Enter User Rewards for Contribution:</label>
+ <input #newUserRewards>
+</div>
+<div>
+ <label>Enter Project Category:</label>
+ <input #newCategory placeholder="like 'art', 'music', etc...">
+</div>
+<div>
+  <label>Task Priority:</label>
+  <button (click)="addProject(
+    newName.value,
+    newStarters.value,
+    newDescription.value,
+    newGoal.value,
+    newImageUrl.value,
+    newUserRewards.value,
+    newCategory.value
+    );"> Add
+  </button>
+  <!-- includes both a method call and property assignment set back to a string. -->
+</div>

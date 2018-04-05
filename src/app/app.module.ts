@@ -15,6 +15,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CreateProjectComponent } from './create-project/create-project.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     HeroComponent,
     ProjectsComponent,
     ProjectDetailsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CreateProjectComponent
   ],
   imports: [
     BrowserModule,
